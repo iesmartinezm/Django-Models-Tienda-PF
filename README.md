@@ -10,7 +10,7 @@ Se solicita:
 
 * **Creación de los modelos** necesarios para su alta y administración 
 en django admin
-* **CRUD de productos** sólo para el administrador en la ruta tienda/admin/
+* **CRUD de productos** en la ruta tienda/admin/
    * **listado** de los productos de la tienda
       * Debe tener enlaces para el resto de acciones 
    * **edicion/\<int:pk>** Editar información de un producto
@@ -20,7 +20,7 @@ en django admin
   * **compra** se muestra un listado de los productos y es posible buscar.
   * **checkout** se muestra información detallada del producto, se introducen 
   las unidades y se confirma la compra.
-* **Informes** sólo para el administrador en la ruta tienda/informes/
+* **Informes** En la ruta tienda/informes/
   * Productos por marca. Primero muestra las marcas y 
   después un listado con los productos de la marca que se seleccione
   * Top ten productos vendidos. Mayor número de unidades vendidas
