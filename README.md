@@ -18,7 +18,8 @@ en django admin
    * **eliminar/\<int:pk>** Debe solicitar confirmación
    * **nuevo** Permite introducir un nuevo producto
 * **Compra de productos**. Tiene lugar en la URL tienda/
-  * **compra** se muestra un listado de los productos y es posible buscar.
+  * **compra** se muestra un listado de los productos y es posible buscar 
+  y filtrar por varios campos.
   * **checkout** se muestra información detallada del producto, se introducen 
   las unidades y se confirma la compra.
 * **Informes** En la ruta tienda/informes/
@@ -27,6 +28,20 @@ en django admin
   * Top ten productos vendidos. Mayor número de unidades vendidas
   * Compras de un usuario con acceso al detalle de cada compra.
   * Top ten mejores clientes. Por importe gastado.
+* **Login** 
+  * Incluye en el template base un apartado que identifique si el usuario
+  está o no logado, dando opciones de login o logout según proceda
+  * Crea un formulario de login que permita autenticar y logar 
+  únicamente a los clientes (No se permite login de usuarios que no tengan
+  relación con el modelo cliente)
+  * El login devuelve a la página desde la que se redirigió.
+* **Control de Permisos** 
+  * Las secciones de Informes, Admin y CRUD de productos son sólo
+  para usuarios tipo superuser y staff
+  * La vista de checkout debe estar restringida a usuarios registrados
+  cómo clientes.
+  * Las vistas de productos de la tienda y detalle de producto son de
+  acceso público.
   
 ## Versión 2.0 
 * **Creación de los modelos** para la gestión de promociones
